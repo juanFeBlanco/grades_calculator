@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Grades_calculator">
         <activity
+            android:name=".resultActivity"
+            android:exported="true" />
+        <activity
             android:name=".calculationActivity"
             android:exported="true" />
         <activity

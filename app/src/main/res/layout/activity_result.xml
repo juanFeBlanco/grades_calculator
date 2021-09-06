@@ -5,60 +5,63 @@
     android:id="@+id/bgCo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".resultActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_width="357dp"
+        android:layout_height="664dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/configBtn"
+        <TextView
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="175dp"
-            android:text="Configuration"
+            android:layout_marginEnd="231dp"
+            android:text="Resultado"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.972"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/nameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="88dp"
-            android:text="Escribe tu nombre para continuar"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="105dp"
+            android:text="."
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.588"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/configBtn" />
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <EditText
-            android:id="@+id/nameTextField"
+        <TextView
+            android:id="@+id/gradeTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:ems="10"
-            android:hint="nombre"
-            android:inputType="textPersonName"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="149dp"
+            android:layout_marginEnd="146dp"
+            android:text="TextView"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/continueBtn"
+            android:id="@+id/rewindBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="Continuar"
+            android:layout_marginTop="90dp"
+            android:text="Calcular otra vez"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nameTextField" />
+            app:layout_constraintTop_toBottomOf="@+id/gradeTxt" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
